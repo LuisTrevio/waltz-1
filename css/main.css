@@ -89,43 +89,45 @@ body {
       );
     --proyect-1: linear-gradient(
         180deg,
-        hsl(191deg 78% 49%) 0%,
-        hsl(194deg 77% 56%) 11%,
-        hsl(197deg 78% 61%) 22%,
-        hsl(199deg 80% 65%) 33%,
-        hsl(202deg 81% 69%) 44%,
-        hsl(205deg 83% 72%) 56%,
-        hsl(208deg 83% 75%) 67%,
-        hsl(211deg 84% 78%) 78%,
-        hsl(215deg 83% 80%) 89%,
-        hsl(219deg 82% 83%) 100%
+        hsl(203deg 87% 63%) 0%,
+        hsl(203deg 91% 60%) 11%,
+        hsl(203deg 95% 56%) 22%,
+        hsl(201deg 100% 49%) 33%,
+        hsl(203deg 100% 50%) 44%,
+        hsl(205deg 100% 50%) 56%,
+        hsl(207deg 100% 50%) 67%,
+        hsl(209deg 100% 50%) 78%,
+        hsl(211deg 100% 50%) 89%,
+        hsl(213deg 100% 50%) 100%
       );
     --proyect-2:linear-gradient(
         0deg,
-        hsl(191deg 78% 49%) 0%,
-        hsl(194deg 77% 56%) 11%,
-        hsl(197deg 78% 61%) 22%,
-        hsl(199deg 80% 65%) 33%,
-        hsl(202deg 81% 69%) 44%,
-        hsl(205deg 83% 72%) 56%,
-        hsl(208deg 83% 75%) 67%,
-        hsl(211deg 84% 78%) 78%,
-        hsl(215deg 83% 80%) 89%,
-        hsl(219deg 82% 83%) 100%
+        hsl(203deg 87% 63%) 0%,
+        hsl(203deg 91% 60%) 11%,
+        hsl(203deg 95% 56%) 22%,
+        hsl(201deg 100% 49%) 33%,
+        hsl(203deg 100% 50%) 44%,
+        hsl(205deg 100% 50%) 56%,
+        hsl(207deg 100% 50%) 67%,
+        hsl(209deg 100% 50%) 78%,
+        hsl(211deg 100% 50%) 89%,
+        hsl(213deg 100% 50%) 100%
       );
-    --contact: linear-gradient(
-        130deg,
-        hsl(240deg 23% 92%) 0%,
-        hsl(242deg 53% 89%) 11%,
-        hsl(244deg 66% 85%) 22%,
-        hsl(247deg 73% 81%) 33%,
-        hsl(249deg 75% 77%) 44%,
-        hsl(252deg 76% 72%) 56%,
-        hsl(255deg 75% 68%) 67%,
-        hsl(258deg 73% 62%) 78%,
-        hsl(262deg 72% 56%) 89%,
-        hsl(267deg 77% 48%) 100%
-      ); 
+    --contact:linear-gradient(
+        45deg,
+        hsl(0deg 0% 20%) 0%,
+        hsl(344deg 0% 18%) 11%,
+        hsl(344deg 0% 16%) 22%,
+        hsl(344deg 0% 14%) 33%,
+        hsl(344deg 0% 12%) 44%,
+        hsl(344deg 0% 10%) 56%,
+        hsl(344deg 0% 8%) 67%,
+        hsl(344deg 0% 6%) 78%,
+        hsl(344deg 0% 3%) 89%,
+        hsl(0deg 0% 0%) 100%
+      );
+      
+      
     --demo: linear-gradient(45deg, hsl(240, 100%, 50%) 0%, hsl(243deg 97% 48%) 5%, hsl(244deg 94% 46%) 10%, hsl(245deg 91% 44%) 15%, hsl(246deg 88% 41%) 20%, hsl(247deg 86% 39%) 25%, hsl(248deg 84% 37%) 30%, hsl(249deg 81% 34%) 35%, hsl(250deg 79% 32%) 40%, hsl(250deg 77% 29%) 45%, hsl(251deg 75% 27%) 50%, hsl(252deg 73% 24%) 55%, hsl(253deg 70% 22%) 60%, hsl(254deg 67% 19%) 65%, hsl(255deg 64% 17%) 70%, hsl(256deg 61% 15%) 75%, hsl(259deg 57% 12%) 80%, hsl(265deg 58% 10%) 85%, hsl(271deg 62% 7%) 90%, hsl(268deg 68% 4%) 95%, hsl(0deg 0% 0%) 100% );
     --header: rgb(255, 255, 255);
     --header-hover: rgb(207, 207, 207);

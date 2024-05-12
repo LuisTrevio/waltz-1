@@ -57,6 +57,7 @@ function Pop() {
     document.querySelectorAll('.Pop-JS-O').forEach((result) => {result.classList.remove('Pop-JS-Out')})
     document.querySelectorAll('.Pop-PY-O').forEach((result) => {result.classList.remove('Pop-PY-Out')})
     document.querySelectorAll('.Pop-SQL-O').forEach((result) => {result.classList.remove('Pop-SQL-Out')})
+    document.querySelectorAll('.Pop-Fr-O').forEach((result) => {result.classList.remove('Pop-Fr-Out')})
 
     document.querySelectorAll('.Pop-Product-1-O').forEach((result) => {result.classList.remove('Pop-Product-1-Out')})
     document.querySelectorAll('.Pop-Product-2-O').forEach((result) => {result.classList.remove('Pop-Product-2-Out')})
@@ -106,4 +107,9 @@ function PopP2() {
 function PopP3() {
     document.querySelectorAll('.Pop-Product-3-O').forEach((result) => {result.classList.add('Pop-Product-3-Out')})
 }
+
+function PopFr() {
+    document.querySelectorAll('.Pop-Fr-O').forEach((result) => {result.classList.add('Pop-Fr-Out')})
+}
+
 

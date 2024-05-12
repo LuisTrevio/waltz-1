@@ -611,11 +611,13 @@ header {
 .St-Fig {width: 65%;}
 .St-HTML {width: 90%;}
 .St-CSS {width: 65%;}
-.St-JS {width: 25%;}
+.St-JS {width: 35%;}
     .St-Node {width: 39%;}
-    .St-React {width: 58%;}
+    .St-React {width: 47%;}
+    .St-Astr {width: 58%;}
 .St-PY {width: 38%;}
 .St-SQL {width: 48%;}
+
 
 .Status-Animated {
     animation: Status 0.3s ease-out;
@@ -626,7 +628,7 @@ header {
     100% {}
 }
 
-.Pop-VS, .Pop-Git, .Pop-Fig, .Pop-HTML, .Pop-CSS, .Pop-JS, .Pop-PY, .Pop-SQL {
+.Pop-VS, .Pop-Git, .Pop-Fig, .Pop-HTML, .Pop-CSS, .Pop-JS, .Pop-PY, .Pop-SQL, .Pop-Fr {
     width: 50vw;
     height: auto;
 
@@ -652,14 +654,14 @@ header {
     pointer-events: none;
 }
 
-.Pop-VS-Out, .Pop-Git-Out, .Pop-Fig-Out, .Pop-HTML-Out, .Pop-CSS-Out, .Pop-JS-Out, .Pop-PY-Out, .Pop-SQL-Out {
+.Pop-VS-Out, .Pop-Git-Out, .Pop-Fig-Out, .Pop-HTML-Out, .Pop-CSS-Out, .Pop-JS-Out, .Pop-PY-Out, .Pop-SQL-Out, .Pop-Fr-Out{
     transform: translate(0,-50px);
     opacity: 1;
     pointer-events: all;
 }
 
 @media (max-width:780px) {
-    .Pop-VS, .Pop-Git, .Pop-Fig, .Pop-HTML, .Pop-CSS, .Pop-JS, .Pop-PY, .Pop-SQL {
+    .Pop-VS, .Pop-Git, .Pop-Fig, .Pop-HTML, .Pop-CSS, .Pop-JS, .Pop-PY, .Pop-SQL, .Pop-Fr {
         width: 100%;
         height: auto;
 
@@ -670,7 +672,7 @@ header {
         transform: translate(0,300px);
     }
 
-    .Pop-VS-Out, .Pop-Git-Out, .Pop-Fig-Out, .Pop-HTML-Out, .Pop-CSS-Out, .Pop-JS-Out, .Pop-PY-Out, .Pop-SQL-Out {
+    .Pop-VS-Out, .Pop-Git-Out, .Pop-Fig-Out, .Pop-HTML-Out, .Pop-CSS-Out, .Pop-JS-Out, .Pop-PY-Out, .Pop-SQL-Out, .Pop-Fr-Out {
         transform: translate(0,0);
         opacity: 1;
     }

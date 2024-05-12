@@ -51,3 +51,7 @@
 .disc {
     background-image: url(discord.svg);
 }
+
+.frame {
+    background-image: url(frames.svg);
+}
