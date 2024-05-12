@@ -1,12 +1,17 @@
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 1) {
-        $(".scroll").addClass("active");
-        $(".btn-en").addClass("resolt");   
-    } else {
-        $(".scroll").removeClass("active");
-        $(".btn-en").removeClass("resolt");
+let LastScrollY = window.scrollY
+
+window.addEventListener("scroll", () => {
+
+    if(LastScrollY < window.scrollY) {
+        console.log("deslizando");
+        document.querySelectorAll('.scroll').forEach((result) => { result.classList.add('active'); })
+        document.querySelectorAll('.btn-en').forEach((result) => { result.classList.add('resolt'); })
+    } else { 
+        console.log("Header off");
+        document.querySelectorAll('.btn-en').forEach((result) => { result.classList.remove('resolt');})
     }
-});
+
+})
 
 
 const observer = new IntersectionObserver((entries) => {
