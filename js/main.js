@@ -8,6 +8,7 @@ window.addEventListener("scroll", () => {
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.add('resolt'); })
     } else { 
         console.log("Header off");
+        document.querySelectorAll('.scroll').forEach((result) => { result.classList.remove('active');})
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.remove('resolt');})
     }
 
