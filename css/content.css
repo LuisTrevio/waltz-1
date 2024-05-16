@@ -302,7 +302,7 @@
 }
 
 .pro-bg {
-    background: #00e1ff;
+    background: #0698f3;
     color: var(--black);
 }
 
@@ -452,10 +452,6 @@
 
 /* ARRIBA EN ABOUT */
 
-ul {
-    padding-left: 30px;
-}
-
 .onlydesk {display: inline;}
 
 .onlyphone {display: none;}
@@ -600,13 +596,13 @@ ul {
     -webkit-user-select: none;
 }
 
-.new, .invert-new {
+.new {
     color: var(--white);
-    background: var(--black);
+    background: var(--trsx);
 }
 
 .item-hero:hover .new {
-    background: var(--bg);
+    background: var(--trsh);
     color:var(--black);
 }
 
@@ -617,18 +613,8 @@ ul {
 
 @media (max-width:780px) {
     .new {
-        background: var(--bg);
+        background: var(--trsv);
         color:var(--black);
-    }
-
-    .invert-new {
-        color:var(--bg);
-        background: var(--black);
-    }
-
-    .item-hero:hover .invert-new {
-        color:var(--bg);
-        background: var(--black);
     }
 }
 
@@ -752,4 +738,13 @@ footer {
 
     padding: 25px 25px 50px 25px;
     font-family: 'Quicksand', sans-serif;
+}
+
+.logo-extra {
+    color: var(--white);
+    font-family: "Josefin Sans";
+    font-size: 60px;
+    display: inline;
+
+    user-select: none;
 }

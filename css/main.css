@@ -41,7 +41,12 @@ body {
 
     /* Text */
     --black: rgb(0, 0, 0);
+  
     --white:rgb(255, 255, 255);
+
+    --trsx: rgba(0, 0, 0, 0.466);
+    --trsh: rgba(238, 238, 238, 0.466);
+    --trsv: rgba(255, 255, 255, 0.836);
 
     /* Button */
     --button: rgba(255, 255, 255, 0.863);
