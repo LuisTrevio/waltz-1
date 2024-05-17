@@ -22,7 +22,7 @@ const observer = new IntersectionObserver((entries) => {
         entry.target.classList.add('show');
     }
     else {
-        entry.target.classList.remove('show');
+        //entry.target.classList.remove('show');
     }
     });
 });
