@@ -6,10 +6,12 @@ window.addEventListener("scroll", () => {
         console.log("deslizando");
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.add('active'); })
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.add('resolt'); })
+        document.querySelectorAll('.bg-en').forEach((result) => { result.classList.add('bg-black'); })
     } else { 
         console.log("Header off");
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.remove('active');})
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.remove('resolt');})
+        document.querySelectorAll('.bg-en').forEach((result) => { result.classList.remove('bg-black');})
     }
 
 })
@@ -65,6 +67,8 @@ function Pop() {
     document.querySelectorAll('.Pop-SQL-O').forEach((result) => {result.classList.remove('Pop-SQL-Out')})
     document.querySelectorAll('.Pop-Fr-O').forEach((result) => {result.classList.remove('Pop-Fr-Out')})
 
+    document.querySelectorAll('.Pop-News-O').forEach((result) => {result.classList.remove('Pop-News-Out')})
+
     document.querySelectorAll('.Pop-Product-1-O').forEach((result) => {result.classList.remove('Pop-Product-1-Out')})
     document.querySelectorAll('.Pop-Product-2-O').forEach((result) => {result.classList.remove('Pop-Product-2-Out')})
     document.querySelectorAll('.Pop-Product-3-O').forEach((result) => {result.classList.remove('Pop-Product-3-Out')})
@@ -118,4 +122,7 @@ function PopFr() {
     document.querySelectorAll('.Pop-Fr-O').forEach((result) => {result.classList.add('Pop-Fr-Out')})
 }
 
+function PopNew() {
+    document.querySelectorAll('.Pop-News-O').forEach((result) => {result.classList.add('Pop-News-Out')})
+}
 
