@@ -700,6 +700,10 @@ h1 {
     background-repeat: no-repeat;
 }
 
+.gh-inv {
+    filter: invert(1);
+}
+
 @media (max-width:780px) {
     .contact-bg {
         padding: 0 25px 0 25px;
@@ -711,6 +715,9 @@ h1 {
         filter: invert(100%);
     }
 
+    .gh-inv {
+        filter: invert(0);
+    }
 }
 
 footer {
