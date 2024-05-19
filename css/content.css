@@ -181,7 +181,7 @@
 
 .theme-1-text {color: var(--white)}
 
-.theme-2 {background: var(--demo2);}
+.theme-2 {  background-image: url(../static/bg-hero2.svg); background-size: cover; background-repeat: no-repeat; background-position: center center;}
 
 .theme-2-text {color: var(--black)}
 
