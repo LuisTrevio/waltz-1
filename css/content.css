@@ -185,8 +185,7 @@
 
 .theme-2-text {color: var(--black)}
 
-.theme-3 {background: var(--demo3);}
-
+.theme-3 {background-image: url(../static/bg-notes.svg); background-size: cover; background-repeat: no-repeat; background-position: center center;}
 .theme-3-text {color: var(--white)}
 
 /* Tercer Cuadro */
@@ -302,7 +301,7 @@
 }
 
 .pro-bg {
-    background: #0698f3;
+    background: #abdfff;
     color: var(--black);
 }
 
@@ -727,6 +726,11 @@ h1 {
     padding: 10px;
     background: gray;
     color: white;
+}
+
+.focus-on-me {
+    cursor: pointer;
+    user-select: none;
 }
 
 footer {

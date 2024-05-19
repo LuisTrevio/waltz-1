@@ -14,6 +14,10 @@ window.addEventListener("scroll", () => {
         document.querySelectorAll('.bg-en').forEach((result) => { result.classList.remove('bg-black');})
     }
 
+    if(LastScrollY == 60 ) {
+        console.log("50");
+    }
+
 })
 
 
