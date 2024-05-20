@@ -55,6 +55,12 @@ header {
     }
 }
 
+@media (max-width: 1030px) {
+    .header-max {
+        border-radius: 0px;
+    }
+}
+
 .logo {
     width: 150px;
     height: 60px;
