@@ -261,7 +261,6 @@ body::-webkit-scrollbar:hover body::-webkit-scrollbar-thumb {
 @media (min-width:2000px) {
     body {
         font-size: 20px;
-        background: red;
     }
 
     h1 {
