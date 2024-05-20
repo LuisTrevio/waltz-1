@@ -13,7 +13,6 @@ window.addEventListener("scroll", () => {
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.remove('resolt');})
         document.querySelectorAll('.bg-en').forEach((result) => { result.classList.remove('bg-black');})
     }
-
 })
 
 
