@@ -38,7 +38,7 @@ body {
     --bg-bar: rgb(235, 235, 235);
 
     --menu-btn: rgb(235, 235, 235);
-    --hover: rgb(235, 235, 235);
+    --hover: rgba(230, 230, 230, 0.747);
 
     /* Nucleo */
     --nucleo: rgb(19, 121, 216);

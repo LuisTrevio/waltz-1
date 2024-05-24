@@ -1,6 +1,6 @@
 .content-hard {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1120px;
     height: 100%;
 
     margin-left: auto;
@@ -382,7 +382,7 @@
     width: 110px;
     height: 120px;
 
-    border-radius: 20px;
+    border-radius: 30px;
 
     scroll-snap-align: center;
 
@@ -412,6 +412,10 @@
 }
 
 @media (max-width:780px) {
+    .item-box {
+        cursor:auto;
+    }
+
     .item-box:hover {
     background: none;
     box-shadow: none;
