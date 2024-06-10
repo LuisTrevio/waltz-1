@@ -3,12 +3,10 @@ let LastScrollY = window.scrollY
 window.addEventListener("scroll", () => {
 
     if(LastScrollY < window.scrollY) {
-        console.log("dentro del rango");
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.add('active'); })
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.add('resolt'); })
         document.querySelectorAll('.bg-en').forEach((result) => { result.classList.add('bg-black'); })
     } else { 
-        console.log("intacto");
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.remove('active');})
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.remove('resolt');})
         document.querySelectorAll('.bg-en').forEach((result) => { result.classList.remove('bg-black');})
@@ -21,9 +19,6 @@ const observer = new IntersectionObserver((entries) => {
     console.log(entry)
     if (entry.isIntersecting) {
         entry.target.classList.add('show');
-    }
-    else {
-        //entry.target.classList.remove('show');
     }
     });
 });

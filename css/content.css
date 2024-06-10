@@ -296,7 +296,7 @@
 }
 
 .mkt-bg {
-    background: #4120f5;
+    background: #140b6f;
     color: var(--white);
 }
 
@@ -745,12 +745,6 @@ footer {
     margin-top: 50px;
 }
 
-@media (max-width:780px) {
-    footer {
-        padding: 0;
-    }
-}
-
 .content-footer {
     width: 100%;
     max-width: 1080px;
@@ -762,6 +756,17 @@ footer {
 
     padding: 25px 25px 50px 25px;
     font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width:780px) {
+    footer {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .content-footer {
+        border-radius: 0;
+    }
 }
 
 .logo-extra {
