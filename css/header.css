@@ -212,9 +212,9 @@ header {
 
     }
 
-    .bar-1, .bar-2, .bar-3 {
+    .bar-1, .bar-3 {
         width: 20px;
-        height: 2px;
+        height: 3px;
 
         border-radius: 20px;
 
