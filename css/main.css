@@ -33,8 +33,11 @@ html, body {
 }
 
 body {
-    background-color: rgb(202, 202, 202);
-    --bg: rgb(201, 201, 201);
+   /* background-color: rgb(202, 202, 202);
+    --bg: rgb(201, 201, 201);*/
+    background-color: #7A7A7A;
+    --bg: #7A7A7A;
+
     --bg-bar: rgb(235, 235, 235);
 
     --menu-btn: rgb(235, 235, 235);

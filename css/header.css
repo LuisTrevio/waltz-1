@@ -132,7 +132,9 @@ header {
         height: 50px;
 
         border-radius: 60px;
-        background-color: rgba(14, 14, 14, 0.596);
+        /*background-color: rgba(14, 14, 14, 0.596);*/
+        background-color: #d9d9d9;
+
 
         margin: 10px;
         gap: 0px;
@@ -142,8 +144,8 @@ header {
     }
 
     .active {
-        width: 95px;
-        gap: 5px;
+        width: 92px;
+        gap: 2px;
     }
 
     .delta-a {
@@ -216,7 +218,8 @@ header {
 
         border-radius: 20px;
 
-        background: rgb(255, 255, 255);
+        /*background: rgb(255, 255, 255);*/
+        background: black;
         transition: 200ms ease-out;
         transform: scale(1);
     }
@@ -247,7 +250,7 @@ header {
             user-select: none;
             font-family: Josefin Sans,sans-serif;
             font-size: 22px;
-            color: white;
+            color: black;
 
             padding: 4px 0 0 0;
     }
