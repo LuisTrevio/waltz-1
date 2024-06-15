@@ -145,6 +145,13 @@ body {
     --header-hover: rgb(207, 207, 207);
     --bar: #2b2b2b;
 
+    --status-base: rgb(209, 209, 209);
+    --status: #000000;
+
+    --btn-proyects: white;
+    --btn-mark: #140b6f;
+
+
     /**/
     font-smooth: antialiased;
     -webkit-font-smoothing: antialiased;
