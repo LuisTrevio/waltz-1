@@ -45,7 +45,7 @@
 }
 
 .twtt {
-    background-image: url(twitter.svg);
+    background-image: url(twitter2.svg);
 }
 
 .disc {
@@ -54,4 +54,16 @@
 
 .frame {
     background-image: url(frames.svg);
+}
+
+.linked {
+    background-image: url(linkedin.svg);
+}
+
+.try {
+    background-image: url(try.svg);
+}
+
+.gh-inv {
+    filter: invert(1);
 }

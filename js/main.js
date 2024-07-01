@@ -4,10 +4,12 @@ window.addEventListener("scroll", () => {
 
     if(LastScrollY < window.scrollY) {
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.add('active'); })
+        document.querySelectorAll('.scroll-2').forEach((result) => { result.classList.add('active-2'); })
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.add('resolt'); })
         document.querySelectorAll('.bg-en').forEach((result) => { result.classList.add('bg-black'); })
     } else { 
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.remove('active');})
+        document.querySelectorAll('.scroll-2').forEach((result) => { result.classList.remove('active-2');})
         document.querySelectorAll('.btn-en').forEach((result) => { result.classList.remove('resolt');})
         document.querySelectorAll('.bg-en').forEach((result) => { result.classList.remove('bg-black');})
     }
@@ -44,6 +46,8 @@ function ClickMenu() {
     document.querySelectorAll('.smooth-logo').forEach((result) => {result.classList.toggle('logo-on');})
 
     document.querySelectorAll('.ctn-scale').forEach((result) => {result.classList.toggle('content-scale');})
+
+    document.querySelectorAll('.letsn').forEach((result) => {result.classList.toggle('letsno');})
 }
 
 function Pop() {
@@ -62,10 +66,13 @@ function Pop() {
     document.querySelectorAll('.Pop-Fr-O').forEach((result) => {result.classList.remove('Pop-Fr-Out')})
 
     document.querySelectorAll('.Pop-News-O').forEach((result) => {result.classList.remove('Pop-News-Out')})
+    document.querySelectorAll('.Pop-Try-O').forEach((result) => {result.classList.remove('Pop-Try-Out')})
 
     document.querySelectorAll('.Pop-Product-1-O').forEach((result) => {result.classList.remove('Pop-Product-1-Out')})
     document.querySelectorAll('.Pop-Product-2-O').forEach((result) => {result.classList.remove('Pop-Product-2-Out')})
     document.querySelectorAll('.Pop-Product-3-O').forEach((result) => {result.classList.remove('Pop-Product-3-Out')})
+
+    document.querySelectorAll('.Pop-md').forEach((result) => {result.classList.remove('Pop-Magic-s')})
 }
 
 function PopVS() {
@@ -118,5 +125,10 @@ function PopFr() {
 
 function PopNew() {
     document.querySelectorAll('.Pop-News-O').forEach((result) => {result.classList.add('Pop-News-Out')})
+}
+
+function PopTry() {
+    document.querySelectorAll('.Pop-Try-O').forEach((result) => {result.classList.add('Pop-Try-Out')})
+    document.querySelectorAll('.Pop-md').forEach((result) => {result.classList.add('Pop-Magic-s')})
 }
 
