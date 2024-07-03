@@ -137,7 +137,7 @@ header {
         height: 50px;
 
         border-radius: 60px;
-        background-color: #d9d9d9;
+        background-color: var(--bg);
         /*background-color: #d9d9d9;*/
 
 
@@ -156,7 +156,7 @@ header {
         border-radius: 60px;
         margin: 10px;
 
-        background-color: #d9d9d9;
+        background-color: var(--bg);
         transition: 0.2s ease-out;
 
         opacity: 1;
@@ -236,7 +236,7 @@ header {
         border-radius: 20px;
 
         /*background: rgb(255, 255, 255);*/
-        background: black;
+        background: var(--white);
         transition: 200ms ease-out;
         transform: scale(1);
     }
@@ -267,7 +267,7 @@ header {
             user-select: none;
             font-family: Josefin Sans,sans-serif;
             font-size: 22px;
-            color: black;
+            color: var(--white);
 
             padding: 4px 0 0 0;
     }
@@ -659,7 +659,7 @@ header {
     height: 80px;
 
     border-radius: 80px;
-    background-color: rgb(255, 245, 239);
+    background-color: var(--status-base);
     box-shadow: var(--shadow-elevation-high);
 }
 
@@ -709,7 +709,7 @@ header {
 
 
 .Status-Animated {
-    animation: Status 0.3s ease-out;
+    animation: Status 0.63s ease-out;
 }
 
 @keyframes Status {
@@ -897,7 +897,7 @@ header {
 }
 
 .bar-social {
-    width: 95%;
+    width: 97%;
     height: 50px;
 
     font-family: 'Quicksand', sans-serif;

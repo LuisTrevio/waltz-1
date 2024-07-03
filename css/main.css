@@ -60,16 +60,16 @@ body {
 
     --demo2: linear-gradient(
         45deg,
-        hsl(0deg 0% 94%) 0%,
-        hsl(60deg 1% 91%) 11%,
-        hsl(60deg 1% 88%) 22%,
-        hsl(60deg 1% 86%) 33%,
-        hsl(60deg 2% 83%) 44%,
-        hsl(60deg 2% 81%) 56%,
-        hsl(60deg 2% 78%) 67%,
-        hsl(60deg 2% 76%) 78%,
-        hsl(60deg 2% 73%) 89%,
-        hsl(60deg 2% 71%) 100%
+        hsl(0deg 0% 71%) 0%,
+        hsl(344deg 0% 67%) 18%,
+        hsl(344deg 0% 64%) 31%,
+        hsl(344deg 0% 60%) 42%,
+        hsl(344deg 0% 57%) 53%,
+        hsl(344deg 0% 53%) 62%,
+        hsl(344deg 0% 50%) 71%,
+        hsl(344deg 0% 46%) 80%,
+        hsl(344deg 0% 43%) 90%,
+        hsl(0deg 0% 39%) 100%
       );
     --demo3: linear-gradient(
         45deg,
@@ -168,23 +168,23 @@ body {
     /**/
     --shadow-color: 0deg 0% 2%;
   --shadow-elevation-low:
-    0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.34),
-    0.1px 0.3px 0.4px -1.2px hsl(var(--shadow-color) / 0.34),
-    0.4px 0.6px 0.8px -2.5px hsl(var(--shadow-color) / 0.34);
+    0px 0.1px 0.1px hsl(var(--shadow-color) / 0.34),
+    0px 0.1px 0.1px -1.2px hsl(var(--shadow-color) / 0.34),
+    0px 0.3px 0.3px -2.5px hsl(var(--shadow-color) / 0.34);
   --shadow-elevation-medium:
-    0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.36),
-    0.3px 0.5px 0.7px -0.8px hsl(var(--shadow-color) / 0.36),
-    0.7px 1.3px 1.7px -1.7px hsl(var(--shadow-color) / 0.36),
-    1.8px 3px 3.9px -2.5px hsl(var(--shadow-color) / 0.36);
+    0px 0.1px 0.1px hsl(var(--shadow-color) / 0.36),
+    0px 0.2px 0.2px -0.8px hsl(var(--shadow-color) / 0.36),
+    0px 0.6px 0.7px -1.7px hsl(var(--shadow-color) / 0.36),
+    -0.1px 1.5px 1.7px -2.5px hsl(var(--shadow-color) / 0.36);
   --shadow-elevation-high:
-    0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.34),
-    0.5px 0.9px 1.2px -0.4px hsl(var(--shadow-color) / 0.34),
-    1px 1.7px 2.2px -0.7px hsl(var(--shadow-color) / 0.34),
-    1.6px 2.7px 3.5px -1.1px hsl(var(--shadow-color) / 0.34),
-    2.5px 4.3px 5.6px -1.4px hsl(var(--shadow-color) / 0.34),
-    3.9px 6.8px 8.8px -1.8px hsl(var(--shadow-color) / 0.34),
-    6px 10.3px 13.4px -2.1px hsl(var(--shadow-color) / 0.34),
-    8.8px 15.2px 19.8px -2.5px hsl(var(--shadow-color) / 0.34);
+    0px 0.1px 0.1px hsl(var(--shadow-color) / 0.34),
+    0px 0.4px 0.5px -0.4px hsl(var(--shadow-color) / 0.34),
+    0px 0.8px 0.9px -0.7px hsl(var(--shadow-color) / 0.34),
+    -0.1px 1.3px 1.5px -1.1px hsl(var(--shadow-color) / 0.34),
+    -0.1px 2.1px 2.4px -1.4px hsl(var(--shadow-color) / 0.34),
+    -0.1px 3.3px 3.7px -1.8px hsl(var(--shadow-color) / 0.34),
+    -0.2px 5px 5.6px -2.1px hsl(var(--shadow-color) / 0.34),
+    -0.3px 7.4px 8.3px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 
 input, button, textarea, select {
