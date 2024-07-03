@@ -1,0 +1,279 @@
+/*IMPORT*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@897&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@502&display=swap');
+
+/*
+font-family: 'Palanquin Dark', sans-serif;
+
+font-family: 'Quicksand', sans-serif;
+
+font-family: 'Josefin Sans', sans-serif;
+
+font-family: "Montserrat", sans-serif;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+*,::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+   /* background-color: rgb(202, 202, 202);
+    --bg: rgb(201, 201, 201);*/
+    background-color: var(--bg);
+    --bg: #1A1A1A;
+
+    --bg-bar: rgb(33, 33, 33);
+
+    --menu-btn: rgb(235, 235, 235);
+    --hover: rgba(230, 230, 230, 0.747);
+
+    /* Nucleo */
+    --nucleo: rgb(19, 121, 216);
+
+    /* Text */
+    --black: rgb(0, 0, 0);
+  
+    --white:rgb(255, 255, 255);
+
+    --trsx: rgba(0, 0, 0, 0.466);
+    --trsh: rgba(238, 238, 238, 0.466);
+    --trsv: rgba(255, 255, 255, 0.836);
+
+    /* Button */
+    --button: rgba(255, 255, 255, 0.863);
+
+    --demo2: linear-gradient(
+        45deg,
+        hsl(0deg 0% 94%) 0%,
+        hsl(60deg 1% 91%) 11%,
+        hsl(60deg 1% 88%) 22%,
+        hsl(60deg 1% 86%) 33%,
+        hsl(60deg 2% 83%) 44%,
+        hsl(60deg 2% 81%) 56%,
+        hsl(60deg 2% 78%) 67%,
+        hsl(60deg 2% 76%) 78%,
+        hsl(60deg 2% 73%) 89%,
+        hsl(60deg 2% 71%) 100%
+      );
+    --demo3: linear-gradient(
+        45deg,
+        hsl(0deg 0% 0%) 2%,
+        hsl(344deg 0% 5%) 59%,
+        hsl(344deg 0% 8%) 75%,
+        hsl(344deg 0% 11%) 84%,
+        hsl(344deg 0% 14%) 90%,
+        hsl(344deg 0% 16%) 94%,
+        hsl(344deg 0% 24%) 97%,
+        hsl(344deg 0% 38%) 99%,
+        hsl(344deg 0% 52%) 100%,
+        hsl(344deg 0% 67%) 100%,
+        hsl(344deg 0% 83%) 100%,
+        hsl(0deg 0% 100%) 100%
+      );
+    --demo4: linear-gradient(
+        45deg,
+        hsl(141deg 63% 49%) 0%,
+        hsl(159deg 100% 40%) 15%,
+        hsl(169deg 100% 39%) 28%,
+        hsl(180deg 100% 38%) 40%,
+        hsl(190deg 100% 43%) 51%,
+        hsl(197deg 100% 48%) 61%,
+        hsl(201deg 100% 50%) 71%,
+        hsl(204deg 100% 50%) 81%,
+        hsl(208deg 100% 50%) 90%,
+        hsl(213deg 100% 50%) 100%
+      );
+    --proyect-1: linear-gradient(
+        180deg,
+        hsl(203deg 87% 63%) 0%,
+        hsl(203deg 91% 60%) 11%,
+        hsl(203deg 95% 56%) 22%,
+        hsl(201deg 100% 49%) 33%,
+        hsl(203deg 100% 50%) 44%,
+        hsl(205deg 100% 50%) 56%,
+        hsl(207deg 100% 50%) 67%,
+        hsl(209deg 100% 50%) 78%,
+        hsl(211deg 100% 50%) 89%,
+        hsl(213deg 100% 50%) 100%
+      );
+    --proyect-2:linear-gradient(
+        0deg,
+        hsl(203deg 87% 63%) 0%,
+        hsl(203deg 91% 60%) 11%,
+        hsl(203deg 95% 56%) 22%,
+        hsl(201deg 100% 49%) 33%,
+        hsl(203deg 100% 50%) 44%,
+        hsl(205deg 100% 50%) 56%,
+        hsl(207deg 100% 50%) 67%,
+        hsl(209deg 100% 50%) 78%,
+        hsl(211deg 100% 50%) 89%,
+        hsl(213deg 100% 50%) 100%
+      );
+    --contact:linear-gradient(
+        45deg,
+        hsl(0deg 0% 20%) 0%,
+        hsl(344deg 0% 18%) 11%,
+        hsl(344deg 0% 16%) 22%,
+        hsl(344deg 0% 14%) 33%,
+        hsl(344deg 0% 12%) 44%,
+        hsl(344deg 0% 10%) 56%,
+        hsl(344deg 0% 8%) 67%,
+        hsl(344deg 0% 6%) 78%,
+        hsl(344deg 0% 3%) 89%,
+        hsl(0deg 0% 0%) 100%
+      );
+      
+      
+    --demo: linear-gradient(45deg, hsl(240, 100%, 50%) 0%, hsl(243deg 97% 48%) 5%, hsl(244deg 94% 46%) 10%, hsl(245deg 91% 44%) 15%, hsl(246deg 88% 41%) 20%, hsl(247deg 86% 39%) 25%, hsl(248deg 84% 37%) 30%, hsl(249deg 81% 34%) 35%, hsl(250deg 79% 32%) 40%, hsl(250deg 77% 29%) 45%, hsl(251deg 75% 27%) 50%, hsl(252deg 73% 24%) 55%, hsl(253deg 70% 22%) 60%, hsl(254deg 67% 19%) 65%, hsl(255deg 64% 17%) 70%, hsl(256deg 61% 15%) 75%, hsl(259deg 57% 12%) 80%, hsl(265deg 58% 10%) 85%, hsl(271deg 62% 7%) 90%, hsl(268deg 68% 4%) 95%, hsl(0deg 0% 0%) 100% );
+    --header: rgb(255, 255, 255);
+    --header-hover: rgb(207, 207, 207);
+    --bar: #2b2b2b;
+
+    --status-base: rgb(209, 209, 209);
+    --status: #000000;
+
+    --btn-proyects: white;
+    --btn-mark: #140b6f;
+
+
+    /**/
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+}
+
+::selection {
+    background-color: #1a69e07c;
+}
+
+body {
+    overflow-x: hidden;
+    /**/
+    --shadow-color: 0deg 0% 2%;
+  --shadow-elevation-low:
+    0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.34),
+    0.1px 0.3px 0.4px -1.2px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.6px 0.8px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium:
+    0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.36),
+    0.3px 0.5px 0.7px -0.8px hsl(var(--shadow-color) / 0.36),
+    0.7px 1.3px 1.7px -1.7px hsl(var(--shadow-color) / 0.36),
+    1.8px 3px 3.9px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high:
+    0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.34),
+    0.5px 0.9px 1.2px -0.4px hsl(var(--shadow-color) / 0.34),
+    1px 1.7px 2.2px -0.7px hsl(var(--shadow-color) / 0.34),
+    1.6px 2.7px 3.5px -1.1px hsl(var(--shadow-color) / 0.34),
+    2.5px 4.3px 5.6px -1.4px hsl(var(--shadow-color) / 0.34),
+    3.9px 6.8px 8.8px -1.8px hsl(var(--shadow-color) / 0.34),
+    6px 10.3px 13.4px -2.1px hsl(var(--shadow-color) / 0.34),
+    8.8px 15.2px 19.8px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+button {
+    border: none;
+}
+
+br {
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;   
+}
+
+a {
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+    background: var(--bg)
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 1px solid var(--bg);
+    background: var(--bar);
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: none;
+}
+
+/**/
+
+.carrusel-box::-webkit-scrollbar {
+    height: 12px;
+    border-radius: 8px;
+    background: var(--bg);
+}
+
+.carrusel-box::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 1px solid var(--bg);
+    background: var(--bar);
+}
+
+.carrusel-box::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: none;
+}
+
+body::-webkit-scrollbar:hover {
+    background: var(--bg-bar)
+}
+
+.carrusel-box::-webkit-scrollbar:hover {
+    background: var(--bg-bar)
+}
+
+body::-webkit-scrollbar:hover body::-webkit-scrollbar-thumb {
+    border: 1px solid var(--bg-bar);
+}
+
+.carrusel-box::-webkit-scrollbar:hover .carrusel-box::-webkit-scrollbar-thumb {
+    border: 1px solid var(--bg-bar);
+}
+
+@media (max-width:780px) {
+
+    .scroll-frost {
+        overflow: hidden;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+}
+
+@media (min-width:2000px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}

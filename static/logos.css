@@ -1,0 +1,69 @@
+.logos {
+    background-position: center;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+}
+
+.testlogo {
+    background-image: url(repost.svg);
+}
+
+.vslogo {
+    background-image: url(vscode.svg);
+}
+
+.fig {
+    background-image: url(fig.svg);
+}
+
+.gh {
+    background-image: url(gh.svg);
+}
+
+.html {
+    background-image: url(html.svg);
+}
+
+.css {
+    background-image: url(css3.svg);
+}
+
+.js {
+    background-image: url(js.svg);
+}
+
+.py {
+    background-image: url(py.svg);
+}
+
+.sql {
+    background-image: url(sql.svg);
+}
+
+.twt {
+    background-image: url(twitch.svg);
+}
+
+.twtt {
+    background-image: url(twitter2.svg);
+}
+
+.disc {
+    background-image: url(discord.svg);
+}
+
+.frame {
+    background-image: url(frames.svg);
+}
+
+.linked {
+    background-image: url(linkedin.svg);
+}
+
+.try {
+    background-image: url(try.svg);
+}
+
+.gh-inv {
+    filter: invert(1);
+}

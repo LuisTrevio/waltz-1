@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="css/favicon.svg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#000000" />
+        <meta
+        name="description"
+        content="Hola estes es mi primer sitio personal..."
+        />
+        <title>Waltz - Primera version del sitio</title>
+
+        <meta property="og:title" content="Waltz - Primera version del sitio">
+		<meta property="og:description:" content="Hola estes es mi primer sitio personal...">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="http://waltz.blog/icon/image-solis.png">
+		<meta property="og:image:alt" content="">
+		<meta property="og:image:width" content="1280">
+		<meta property="og:image:height" content="675">
+
+        <!-- Crees que deba cambiar a Twitter por X, que babosada -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="@Luistrevio4">
+		<meta name="twitter:title" content="Waltz - Primera version del sitio">
+		<meta name="twitter:description" content="Hola este es mi primer sitio personal...">
+		<meta name="twitter:image" content="http://waltz.blog/icon/image-solis.png">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/content.css">
+        <link rel="stylesheet" type="text/css" href="static/logos.css">
+
+        <script defer src="js/main.js"></script>
+    </head>
+
+    <body class="scr-fr">
+        <!-- SCReen FRozen, cuando este interactua el menu movil o algun item se desactiva el scroll con overflow (y) -->
+        <div class="logointro">
+            <b><i>Waltz</i></b>
+        </div>
+
+        <div onclick="Pop()" class="Pop Pop-Exit Pop-md"> <!-- Ventana de fondo para los POPS --> </div>
+    
+        <header>
+            <div class="header-max bg-en">
+
+                <div class="logo smooth-logo"><b><i>Waltz</i></b></div>
+
+                <div class="button-melbourne scroll">
+                    <div onclick="ClickMenu()" class="delta-a">
+                        <div class="button">
+                            <div class="bar-1 br-1"></div>
+                            <div class="bar-3 br-3"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="delta-b btn-en">
+                        <div class="logo-w">W</div>
+                    </a>
+                </div>
+
+                <div onclick="Pop(), PopTry()" class="letstry letsn scroll-2">
+                    <div class="imp svg try"></div>
+                </div>
+
+                    <div class="link-desk">
+                        <a href="" class="lk-op">Novedades</a>
+                        <a href="" class="lk-op">Proyectos</a>
+                        <a href="https://github.com/LuisTrevio/waltz-1" class="lk-op">Github<div class="svg-text svg gh gh-inv"></div></a>
+                    </div>
+
+                    <div class="button-limite">
+                        <div onclick="Pop(), PopTry()" class="button-md">
+                            <div class="border-btn">
+                                <button class="md">Let's Try</button>
+                            </div>
+                        </div>
+                    </div>
+
+                <a href="https://github.com/LuisTrevio/hub" title="Abrir repositorio de este sitio web" alt="Abrir repositorio de este sitio web" class="git testlogo"></a>
+                
+            </div>
+
+        </header>
+
+        <div class="Menu-Full menu-on">
+            <div class="menu-grid">
+                <a href="#" onclick="ClickMenu()" class="menu-grid-link smooth-menu">Novedades</a>
+                <a href="#" onclick="ClickMenu()" class="menu-grid-link smooth-menu menu-delay">Proyectos</a>
+                <a href="https://github.com/LuisTrevio/waltz-1" onclick="ClickMenu()" class="menu-grid-link smooth-menu menu-delay-2">Github</a>
+            </div>
+            <div class="credits smooth-credits"> 
+
+                <div class="redes-sociales">
+                    <a href="#" title="Twitch" class="imp inv-svg gh"></a>
+                    <a href="#" title="Twitter" class="imp twtt"></a>
+                    <a href="https://discord.gg/g5UdV2H7" title="Discord" class="imp disc"></a>
+                </div>
+
+                <b>Copyright &copy; LuisTrevio 2024</b> V1.2
+            </div>
+        </div>
+
+        <div class="content-hard ctn-scale">
+        <!-- BLOQUE CONTENIDO -->
+
+            <div class="scenario-news">
+               <!-- NOVEDADES CONTENIDO  Recordar ampliacion-->
+                <div class="position-intro">
+                    <h2>Ultimas novedades</h2><a href="#" class="link"><b>Ver todo</b></a>
+                </div>
+                <div class="carrusel-box">
+                    
+                    <!--
+                    <div onclick="Pop(), PopNew()" href="#" class="item-intro-1 theme-3">
+                        <div class="title-item-intro theme-3-text">
+                            <h2>Mejora en la interfaz y correcciones</h2>
+                            Sip, ¿porque?...
+                            <br><br><b>Ver la nota</b> 
+                        </div>
+                    </div>
+                 -->
+
+                 
+                    <div onclick="Pop(), PopP2()" title="Waltz 2.0" class="item-intro-1 theme-2">
+
+                        <div class="title-item-intro theme-2-text">
+                        <h2>Waltz 2.0</h2>
+                        Nueva mejoras en la interfaz de Waltz con el nuevo Framework Astro
+                        <br><br><b>Visitar la pagina</b> 
+                        </div>
+                    </div>
+
+                    <div onclick="Pop(), PopP1()" title="Marketed" class="item-intro-1 theme-1">
+
+                        <div class="title-item-intro theme-1-text">
+                        <h2>Marketed</h2>
+                        Mi primer pagina web, enfocado al marketing educativo.
+                        <br><br><b>Visitar la pagina</b> 
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="item-intro-1 theme-3">
+                        <div class="title-item-intro theme-3-text">
+                            <h2>Muy pronto</h2>
+                            Abra nuevas actualizaciones...
+                            <br><br><b>Ver mas</b> 
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="scenario-about">
+                  <!-- HOLA CONTENIDO -->
+                <div class="about about-bg">
+                    <div class="text-about">
+                        <h1>¡Hola!</h1><br>
+                        Soy <b>Luis Trevio</b>, me especializo de manera autónoma en el desarrollo de sitios web. Estudié <b>ingeniería</b> y <b>programación</b>, enfocándome en el desarrollo de aplicaciones, juegos y bases de datos. Mi meta es seguir mejorando y ofrecer lo mejor de mí como desarrollador.
+                        <br><br><a href="#" class="link-button mkt-bg"> <b>Muy Pronto CV</b> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-items grow hidden">
+                  <!-- ITEMS CONTENIDO -->
+                <div class="position-intro">
+                    <h1>Items de programacion</h1>
+                </div>
+                <div class="grid-items">
+                    <div class="text-items hidden">Aquí en este escenario está todo lo que he usado en los últimos momentos de 
+                        programación; solo agregue lo que me interese, y tal vez agregue más elementos en el camino. En el desarrollo de esta pagina utilice HTML, CSS y Javascript ademas de otros proyectos.
+                        
+                        <br><br>
+                        <div class="square-font"> 
+                            Haga clic en esos elementos para ver más un poquito de informacion.
+                        </div>
+                </div>
+                      <!-- ITEMS INTERACTIVOS CONTENIDO -->
+                    <div class="carrusel-box-lg hidden">
+                        <div onclick="Pop(), PopVS()" class="item-box">
+                            <div class="logo-item-box inv-svg logos vslogo"></div>
+                            <div class="text-item-box"><b>Visual Studio Code</b></div>
+                        </div>
+                        <div onclick="Pop(), PopGit()" class="item-box">
+                            <div class="logo-item-box inv-svg logos gh"></div>
+                            <div class="text-item-box"><b>Github</b></div>
+                        </div>
+                        <div onclick="Pop(), PopFig()" class="item-box">
+                            <div class="logo-item-box inv-svg logos fig"></div>
+                            <div class="text-item-box"><b>Figma</b></div>
+                        </div>
+                        <div onclick="Pop(), PopHTML()" class="item-box">
+                            <div class="logo-item-box inv-svg logos html"></div>
+                            <div class="text-item-box"><b>HTML5</b></div>
+                        </div>
+                        <div onclick="Pop(), PopCSS()" class="item-box">
+                            <div class="logo-item-box inv-svg logos css"></div>
+                            <div class="text-item-box"><b>CSS3</b></div>
+                        </div>
+                        <div onclick="Pop(), PopJS()" class="item-box">
+                            <div class="logo-item-box inv-svg logos js"></div>
+                            <div class="text-item-box"><b>Javascript</b></div>
+                        </div>
+                        <div onclick="Pop(), PopPY()" class="item-box">
+                            <div class="logo-item-box inv-svg logos py"></div>
+                            <div class="text-item-box"><b>Python</b></div>
+                        </div>
+                        <div onclick="Pop(), PopSQL()" class="item-box">
+                            <div class="logo-item-box inv-svg logos sql"></div>
+                            <div class="text-item-box"><b>MySQL</b></div>
+                        </div>
+                        <div onclick="Pop(), PopFr()" class="item-box">
+                            <div class="logo-item-box inv-svg logos frame"></div>
+                            <div class="text-item-box"><b>Frameworks</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-proyects">
+                  <!-- PROYECTOS CONTENIDO  Recordar ampliacion-->
+                <div class="proyects proyects-bg">
+                    <div class="text-about hidden">
+                        <h1>Demos, Proyectos y Demas</h1><br>
+                        Los proyectos son basados en ejercicios y programas hechos como prueba. Cada proyecto o demo tiene un enlace para explorar y una referencia para ver el demo.
+                        <br>
+                        <div class="onlydesk"><br><a href="#" class="link-button pro-bg"> <b>Ver Proyectos</b> </a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-new">
+                <div class="position-hero txt-black">
+                    <h2>Proyectos recientes</h2>
+                </div>
+                <div class="flex-new">
+                    <div class="box-hero hidden">
+                    <div onclick="Pop(), PopP1()" title="Marketed" class="item-hero hero-bg-1">
+                        <div class="position-new">
+                            <div class="new"><b> JS </b></div>
+                            <div class="new"><b> CSS </b></div>
+                            <div class="new"><b> HTML </b></div>
+                        </div>
+                        <div class="title-hero"> 
+                            <h2>Marketed</h2>
+                            Un web blog sobre el marketing y educativo.
+                            <br><br><b>Visitar la pagina</b> 
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="box-hero hidden">
+                    <div onclick="Pop(), PopP2()" title="Waltz 2.0" class="item-hero hero-bg-2 hidden">
+                        <div class="position-new">
+                            <div class="new"><b> CSS </b></div>
+                            <div class="new"><b> Astro </b></div>
+                            <div class="new"><b>Nuevo</b></div>
+                        </div>
+                        <div class="title-hero"> 
+                            <h2>Waltz 2.0</h2>
+                            Nueva mejoras en la interfaz de Waltz con el nuevo Framework Astro.Build
+                            <br><br><b>Visitar la pagina</b> 
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="box-hero hidden">
+                    <div onclick="Pop(), PopP3()" title="Waltz" class="item-hero hero-bg-3 hidden">
+                        <div class="position-new">
+                            <div class="new"><b> CSS </b></div>
+                            <div class="new"><b> HTML / JS </b></div>
+                            <div class="new"><b> Demo </b></div>
+                        </div>
+                        <div class="title-hero"> 
+                            <h2>Waltz</h2>
+                            Diseño e interfaz contrastado.
+                            <br><br><b>Visitar la pagina</b> 
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="onlyphone"><a href="#" class="link-button pro-bg"> <b>Ver mas proyectos</b> </a></div>
+                </div>
+            </div>
+
+
+            <!--
+            <div class="scenario-contact">
+            -->    
+                 <!-- CONTACTOS CONTENIDO --><!--
+                <div class="contact contact-bg">
+                    <div class="text-about hidden">
+                        <h1>Puedes contactarme en </h1><br>
+                        <div class="redes-sociales-desk">
+                            <a href="#" title="Github" class="imp-d gh gh-inv"></a>
+                            <a href="#" title="Twitter" class="imp-d twtt"></a>
+                            <a href="https://discord.gg/g5UdV2H7" title="Discord" class="imp-d disc"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+            <footer>
+                <div class="content-footer">
+                    <!-- FOOTER CONTENIDO -->
+                        Esto es un trabajo de diseño conceptual, version previo, si hay un problema puedes contactarme o puedes revisar el repositorio de esta pagina en el boton Github. <br><br>
+                        <div class="logo-extra">Waltz</div>
+                    <br>
+                        <b>Copyright &copy; LuisTrevio 2024</b> <br><b> Estado : </b> Version 1.2 
+                </div>
+            </footer>
+            <!-- FINAL DEL CONTENIDO -->
+        <!-- -->
+        </div>
+            <!-- Ventana burbuja -->
+            <div class="flex-pop"><!-- -->
+
+                <div class="Pop-VS Pop-VS-O">
+                    <div class="Pop-icon"><div class="burble-pop logos vslogo"></div></div>
+                    <div class="Pop-center"><h2>Visual Studios Code</h2></div>
+                    <div class="Pop-text">
+                        Es un editor muy popular, entre Vim y Sublime Text elegi a VS Code por la 
+                        flexibilidad a la hora de trabajar en cualquier dispositivo usando la web de ella.
+                    </div>
+                    <div class="Pop-center-text">Uso / Habilidad</div>
+                    <div class="Ability"><div class="Status St-VS Status-Ani"></div></div>
+                    <div class="Pop-center-text">Habilidad con Terminal</div>
+                    <div class="Ability"><div class="Status St-Terml Status-Ani"></div></div>
+                          
+                </div>
+
+                <div class="Pop-Git Pop-Git-O">
+                    <div class="Pop-icon"><div class="burble-pop logos gh"></div></div>
+                    <div class="Pop-center"><h2>Github</h2></div>
+                    <div class="Pop-text">
+                        Es una plataforma de repositorios bastante buena para controlar las versiones y gestión de proyectos, y a la vez puedo trabajar con ella mediante la conexión de Visual Studios Code.
+                    </div>
+                    <div class="Pop-center-text">Habilidad</div>
+                    <div class="Ability"><div class="Status St-Git Status-Ani"></div></div>
+                  
+                </div>
+
+                <div class="Pop-Fig Pop-Fig-O">
+                    <div class="Pop-icon"><div class="burble-pop logos fig"></div></div>
+                    <div class="Pop-center"><h2>Figma</h2></div>
+                    <div class="Pop-text">
+                        Figma y entre otros programas, lo uso como herramientas visuales para el desarrollo en editor Visual Studios Code, lo que permite programar, diseñar y organizar de manera más eficiente.
+                    </div>
+                    <div class="Pop-center-text">Habilidad</div>
+                    <div class="Ability"><div class="Status St-Fig Status-Ani"></div></div>
+                    
+                </div>
+
+                <div class="Pop-HTML Pop-HTML-O">
+                    <div class="Pop-icon"><div class="burble-pop logos html"></div></div>
+                    <div class="Pop-center"><h2>HTML5</h2></div>
+                    <div class="Pop-text">
+                        Es el esqueleto base del sitio web, hay algunos framework que experimentan el cambio con HTML
+                    </div>
+                    <div class="Pop-center-text">Habilidad</div>
+                    <div class="Ability"><div class="Status St-HTML Status-Ani"></div></div>
+                    
+                </div>
+
+                <div class="Pop-CSS Pop-CSS-O">
+                    <div class="Pop-icon"><div class="burble-pop logos css"></div></div>
+                    <div class="Pop-center"><h2>CSS3</h2></div>
+                    <div class="Pop-text">
+                        El CSS3 es un lenguaje muy complejo, es un lenguaje que permite diseñar y definir una presentación a base de un documento estructurado.
+                    </div>
+                    <div class="Pop-center-text">Habilidad</div>
+                    <div class="Ability"><div class="Status St-CSS Status-Ani"></div></div>
+                   
+                </div>
+
+                <div class="Pop-JS Pop-JS-O">
+                    <div class="Pop-icon"><div class="burble-pop logos js"></div></div>
+                    <div class="Pop-center"><h2>Javascript</h2></div>
+                    <div class="Pop-text">
+                        Seré franco, no le sé mucho, pero cada etapa aprendo nuevos conocimientos con nuevas herramientas y lenguajes. Javascript haya sido mi mayor reto en aprender y comprender de lo que sucede actualmente en la tecnología.
+                    </div>
+                    <div class="Pop-center-text">Habilidad</div>
+                    <div class="Ability"><div class="Status St-JS Status-Ani"></div></div>
+                
+                    
+                </div>
+
+                <div class="Pop-PY Pop-PY-O">
+                    <div class="Pop-icon"><div class="burble-pop logos py"></div></div>
+                    <div class="Pop-center"><h2>Python</h2></div>
+                    <div class="Pop-text">
+                        Tambien uso Python para desarrollo en otros proyectos. Un lenguaje de programación muy querido por la comunidad.
+                    </div>
+                    <div class="Pop-center-text">Habilidad</div>
+                    <div class="Ability"><div class="Status St-PY Status-Ani"></div></div>
+                    
+                </div>
+
+                <div class="Pop-SQL Pop-SQL-O">
+                    <div class="Pop-icon"><div class="burble-pop logos sql"></div></div>
+                    <div class="Pop-center"><h2>MySQL</h2></div>
+                    <div class="Pop-text">
+                        Me atrapaste, no se me ocurrio ni mayes.
+                    </div>
+                    <div class="Pop-center-text">Habilidad</div>
+                    <div class="Ability"><div class="Status St-SQL Status-Ani"></div></div>
+                
+                </div>
+
+                <div class="Pop-Fr Pop-Fr-O">
+                    <div class="Pop-icon"><div class="burble-pop logos frame"></div></div>
+                    <div class="Pop-center"><h2>Frameworks</h2></div>
+                    <div class="Pop-text">
+                        Los frameworks y bibliotecas conlleva muchas herramientas que pueden favorecer en el desarrollo de un sitio web de diferentes maneras, aquí muestro los siguientes que he utilizado para distintos proyectos:
+                    </div>
+                    <div class="Pop-center-text">Node.js</div>
+                    <div class="Ability"><div class="Status St-Node Status-Ani"></div></div>
+                    <div class="Pop-center-text">React</div>
+                    <div class="Ability"><div class="Status St-React Status-Ani"></div></div>
+                    <div class="Pop-center-text">Astro.Build</div>
+                    <div class="Ability"><div class="Status St-Astr Status-Ani"></div></div>
+                    <div class="Pop-center-text">Vue.js</div>
+                    <div class="Ability"><div class="Status St-Node Status-Ani"></div></div>
+                
+                </div>
+
+                <div class="Pop-News Pop-News-O">
+                    <div class="title-product"><h2>Mejora en la interfaz y correcciones</h2></div>
+                    <br>
+                    <div class="Pop-text">
+                    
+                        Realizado en 18/05/2024
+                        <br><br>
+                        <hr>
+                        <br>
+                        Hola, esta página se creó con el propósito de demostración web en base un simple diseño y quisiera corregir algunas cosas entre los textos, elementos y algunos diseños nuevos
+                        <br><br>
+                        Mejoramos en algunos apartados como:
+                        <br>
+                        <ul>
+                            <li> Diseño mas recortado </li>
+                            <li> Reduccion en las animaciones </li>
+                            <li> Botones mas inservibles</li>
+                        </ul>
+                        <br>
+                        Gracias por ayudar a corregir la página y espero aprovechar más este sitio web.
+                        <br><br>
+                        <div onclick="Pop()" class="square-font focus-on-me">
+                            Haz click en el fondo o click aqui para salir del cuadro
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Pop-Try Pop-Try-O">
+                    <div class="title-product"><h2 style="text-align: center;">Redes sociales</h2></div>
+                    <br>
+                    <div class="bar-grid">
+                        <a href="#" class="bar-social">Visitar el perfil Github <div class="svg-text svg gh gh-inv"></div> </a>
+                        <a href="#" class="bar-social">Visitar el perfil LinkedIn<div class="svg-text svg linked"></div></a>
+                        <a href="#" class="bar-social">Ver el perfil Twitter<div class="svg-text svg twtt"></div></a>
+                        <br><hr style="width: 80%;"><br>
+                        <a href="#" class="bar-social">Muy Pronto CV</a>
+                    </div>
+                </div>
+
+                <div class="Pop-Product-1 Pop-Product-1-O bg-p1">
+                    <div class="bg-add">
+                        <div class="title-product"><h1>Marketed</h1></div>
+                        <div class="position-new-p">
+                            <div class="invert-new mkt-bg"><b> HTML </b></div>
+                            <div class="invert-new mkt-bg"><b> CSS </b></div>
+                            <div class="invert-new mkt-bg"><b> JS </b></div>
+                        </div>
+                        <div class="Pop-text">
+                            Mi primer pagina web, enfocado al marketing educativo.
+                        </div>
+                        <div class="button-center">
+                            <a href="https://luistrevio.github.io/Marketed/" class="button-product mkt-bg"><b>Visitar la pagina</b></a>
+                            <div class="onlydesk"><a href="https://luistrevio.github.io/Marketed/" class="button-product mkt-bg"><b>Abrir en Github</b><div class="svg-text inv-svg gh"></div></a></div>
+                            <div class="onlyphone"><a href="https://luistrevio.github.io/Marketed/" class="button-product mkt-bg"><b>Abrir en</b><div class="svg-text inv-svg gh"></div></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Pop-Product-2 Pop-Product-2-O bg-p2">
+                    <div class="bg-add">
+                        <div class="title-product"><h1>Waltz 2.0</h1></div>
+                        <div class="position-new-p">
+                            <div class="invert-new dk-bg"><b> Astro </b></div>
+                            <div class="invert-new dk-bg"><b> CSS </b></div>
+                            <div class="invert-new dk-bg"><b> Nuevo </b></div>
+                        </div>
+                        <div class="Pop-text">
+                            Nueva mejoras en la interfaz de Waltz con el estreno de un nuevo Framework llamado "Astro" es una herramienta apoyado para blog y sitios base.
+                        </div>
+                        <div class="button-center">
+                            <a href="https://luistrevio.github.io/waltz/" class="button-product dk-bg"><b>Visitar la pagina</b></a>
+                            <div class="onlydesk"><a href="https://github.com/LuisTrevio/waltz" class="button-product dk-bg"><b>Abrir en Github</b><div class="svg-text svg gh"></div></a></div>
+                            <div class="onlyphone"><a href="https://github.com/LuisTrevio/waltz" class="button-product dk-bg"><b>Abrir en</b><div class="svg-text svg gh"></div></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Pop-Product-3 Pop-Product-3-O bg-p3">
+                    <div class="bg-add">
+                        <div class="title-product"><h1>Waltz</h1></div>
+                        <div class="position-new-p">
+                            <div class="invert-new wtz-bg"><b> Demo ilustrativo </b></div>
+                            <div class="invert-new wtz-bg"><b> HTML</b></div>
+                            <div class="invert-new wtz-bg"><b> CSS </b></div>
+                        </div>
+                        <div class="Pop-text">
+                            Diseño e interfaz contrastado.
+                        </div>
+                        <div class="button-center">
+                            <a href="#" class="button-product wtz-bg" ><b>Visitar la pagina</b></a>
+                            <div class="onlydesk"><a href="#" class="button-product wtz-bg"><b>Abrir en Github</b><div class="svg-text gh"></div></a></div>
+                            <div class="onlyphone"><a href="#" class="button-product wtz-bg"><b>Abrir en</b><div class="svg-text gh"></div></a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        <!-- Final de las burbujas -->
+    </body>
+    
+</html>
