@@ -67,3 +67,7 @@
 .gh-inv {
     filter: invert(1);
 }
+
+.dark-mode-svg {
+    filter: invert(1);
+}

@@ -73,7 +73,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 180px;
     height: 60px;
 
     font-family: "Josefin Sans";
@@ -119,6 +119,10 @@ header {
     }
 }
 
+.btn-interno {
+    display: none;
+}
+
 @media (max-width:780px) {
     header {
         background-color: rgba(0, 0, 0, 0);
@@ -146,6 +150,20 @@ header {
         padding: 5px;
 
         transition: 0.2s ease-out;
+    }
+
+    .btn-interno {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        flex-wrap: nowrap;
+
+        flex-direction: row;
+        transition: 0.2s ease-out;
+    }
+
+    .interno-size {
+        width: 140px;
     }
     
     .letstry {
@@ -236,7 +254,7 @@ header {
         border-radius: 20px;
 
         /*background: rgb(255, 255, 255);*/
-        background: var(--white);
+        background: var(--white-dn);
         transition: 200ms ease-out;
         transform: scale(1);
     }
@@ -267,7 +285,7 @@ header {
             user-select: none;
             font-family: Josefin Sans,sans-serif;
             font-size: 22px;
-            color: var(--white);
+            color: var(--white-dn);
 
             padding: 4px 0 0 0;
     }
@@ -503,11 +521,65 @@ header {
 }
 
 .button-limite {
-    width: 137px;
+    width: auto;
     height: 60px;
 
     display: flex;
+
     justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.darkmode {
+    width: 32px;
+    height: 32px;
+
+    background-color: rgba(32, 32, 32, 0.13);
+    background-image: var(--darkmode);
+
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+
+    transition: 0.2s ease-out;
+}
+
+.darkmode:hover {
+   background-color: rgb(255 255 255 / 15%);
+}
+
+.movil {
+    display: none;
+}
+
+@media (max-width:780px) {
+    .darkmode {
+        display: flex;
+        width: 50px;
+        height: 50px;
+
+        border-radius: 60px;
+        margin: 10px;
+
+        background-color: var(--bg);
+        
+        transition: 0.2s ease-out;
+
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .darksi {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .darkmode:hover {
+        background-color: var(--bg);
+    }
 }
 
 .button-md {
@@ -661,6 +733,7 @@ header {
     border-radius: 80px;
     background-color: var(--status-base);
     box-shadow: var(--shadow-elevation-high);
+    pointer-events: all;
 }
 
 @media (max-width:780px) {
@@ -696,7 +769,8 @@ header {
 
 .St-VS {width: 75%;}
     .St-Terml {width: 35%;}
-.St-Git {width: 35%;}
+.St-Git {width: 47%;}
+    .St-GitGit {width: 35%;}
 .St-Fig {width: 65%;}
 .St-HTML {width: 90%;}
 .St-CSS {width: 65%;}
@@ -719,7 +793,7 @@ header {
 
 .Pop-VS, .Pop-Git, .Pop-Fig, .Pop-HTML, .Pop-CSS, .Pop-JS, .Pop-PY, .Pop-SQL, .Pop-Fr, .Pop-News {
     width: 50vw;
-    max-width: 1080px;
+    max-width: 720px;
     height: auto;
 
     margin-left: auto;
@@ -728,8 +802,8 @@ header {
     margin-top: auto;
     margin-bottom: auto;
 
-    background-color: rgb(0, 0, 0);
-    color: var(--white);
+    background-color: var(--bg-pop);
+    color: var(--white-dn);
 
     display: flex;
     position: fixed;
@@ -750,7 +824,7 @@ header {
 
 .Pop-Try {
     width: 50vw;
-    max-width: 1080px;
+    max-width: 720px;
     height: auto;
 
     margin-left: auto;
@@ -903,16 +977,14 @@ header {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
    
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 2px white solid;
-
     border-radius: 60px;
-    background-color: rgb(0, 0, 0);
+    background-color: #2e2e2e;
     transition: 0.2s ease-out;
 
     display: flex;

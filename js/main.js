@@ -28,6 +28,8 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+
+
 function ClickMenu() {
     document.querySelectorAll('.br-1').forEach((result) => {result.classList.toggle('bar1-on');})
 
@@ -48,6 +50,10 @@ function ClickMenu() {
     document.querySelectorAll('.ctn-scale').forEach((result) => {result.classList.toggle('content-scale');})
 
     document.querySelectorAll('.letsn').forEach((result) => {result.classList.toggle('letsno');})
+
+    document.querySelectorAll('.darks').forEach((result) => {result.classList.toggle('darksi');})
+
+    document.querySelectorAll('.fixsize').forEach((result) => {result.classList.toggle('interno-size');})
 }
 
 function Pop() {
@@ -129,6 +135,16 @@ function PopNew() {
 
 function PopTry() {
     document.querySelectorAll('.Pop-Try-O').forEach((result) => {result.classList.add('Pop-Try-Out')})
-    document.querySelectorAll('.Pop-md').forEach((result) => {result.classList.add('Pop-Magic-s')})
 }
 
+if (localStorage.getItem('dark-mode') === 'true' ) {
+    document.body.classList.add('dark');
+}
+else {
+    document.body.classList.remove('dark');
+}
+
+function da() {
+    document.body.classList.toggle('dark');
+    document.querySelectorAll('.inv-dark').forEach((result) => {result.classList.toggle('dark-mode-svg')});
+}

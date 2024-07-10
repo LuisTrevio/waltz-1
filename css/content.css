@@ -53,7 +53,7 @@
     height: 410px;
 
     padding: 25px 25px;
-    color: var(--white);
+    color: var(--white-dn);
 }
 
 .position-intro {
@@ -323,7 +323,7 @@
     height: auto;
 
     padding: 25px 25px;
-    color: var(--white);
+    color: var(--white-dn);
 
 }
 
@@ -424,7 +424,7 @@
     box-shadow: none;
     }
     .item-box:active {
-        background: var(--white);
+        background: var(--white-dn);
         box-shadow: var(--shadow-elevation-high);
         
     }  
@@ -499,7 +499,7 @@
     padding-left: 0;
     padding-bottom: 15px;
 
-    color: var(--white);
+    color: var(--white-dn);
 }
 
 .box-hero {
