@@ -424,7 +424,7 @@
     box-shadow: none;
     }
     .item-box:active {
-        background: var(--white-dn);
+        background: var(--hover);
         box-shadow: var(--shadow-elevation-high);
         
     }  

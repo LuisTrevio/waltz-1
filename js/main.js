@@ -1,7 +1,5 @@
 let LastScrollY = window.scrollY
-
 window.addEventListener("scroll", () => {
-
     if(LastScrollY < window.scrollY) {
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.add('active'); })
         document.querySelectorAll('.scroll-2').forEach((result) => { result.classList.add('active-2'); })
@@ -15,7 +13,6 @@ window.addEventListener("scroll", () => {
     }
 })
 
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
     console.log(entry)
@@ -28,31 +25,19 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-
-
 function ClickMenu() {
     document.querySelectorAll('.br-1').forEach((result) => {result.classList.toggle('bar1-on');})
-
     /*document.querySelectorAll('.br-2').forEach((result) => {result.classList.toggle('bar2-on');})*/
-
     document.querySelectorAll('.br-3').forEach((result) => {result.classList.toggle('bar3-on');})
 
         document.querySelectorAll('.menu-on').forEach((result) => {result.classList.toggle('Menu-Full-on');})
-
         document.querySelectorAll('.scr-fr').forEach((result) => {result.classList.toggle('scroll-frost');})
-
         document.querySelectorAll('.smooth-menu').forEach((result) => {result.classList.toggle('menu-grid-smooth');})
-        
         document.querySelectorAll('.smooth-credits').forEach((result) => {result.classList.toggle('credits-smooth');})
 
-    document.querySelectorAll('.smooth-logo').forEach((result) => {result.classList.toggle('logo-on');})
-
     document.querySelectorAll('.ctn-scale').forEach((result) => {result.classList.toggle('content-scale');})
-
     document.querySelectorAll('.letsn').forEach((result) => {result.classList.toggle('letsno');})
-
     document.querySelectorAll('.darks').forEach((result) => {result.classList.toggle('darksi');})
-
     document.querySelectorAll('.fixsize').forEach((result) => {result.classList.toggle('interno-size');})
 }
 
@@ -81,70 +66,44 @@ function Pop() {
     document.querySelectorAll('.Pop-md').forEach((result) => {result.classList.remove('Pop-Magic-s')})
 }
 
-function PopVS() {
-    document.querySelectorAll('.Pop-VS-O').forEach((result) => {result.classList.add('Pop-VS-Out')})
-}
+function PopVS() {document.querySelectorAll('.Pop-VS-O').forEach((result) => {result.classList.add('Pop-VS-Out')})}
+function PopGit() {document.querySelectorAll('.Pop-Git-O').forEach((result) => {result.classList.add('Pop-Git-Out')})}
+function PopFig() {document.querySelectorAll('.Pop-Fig-O').forEach((result) => {result.classList.add('Pop-Fig-Out')})}
+function PopHTML() {document.querySelectorAll('.Pop-HTML-O').forEach((result) => {result.classList.add('Pop-HTML-Out')})}
+function PopCSS() {document.querySelectorAll('.Pop-CSS-O').forEach((result) => {result.classList.add('Pop-CSS-Out')})}
+function PopJS() {document.querySelectorAll('.Pop-JS-O').forEach((result) => {result.classList.add('Pop-JS-Out')})}
+function PopPY() {document.querySelectorAll('.Pop-PY-O').forEach((result) => {result.classList.add('Pop-PY-Out')})}
+function PopSQL() {document.querySelectorAll('.Pop-SQL-O').forEach((result) => {result.classList.add('Pop-SQL-Out')})}
+function PopFr() {document.querySelectorAll('.Pop-Fr-O').forEach((result) => {result.classList.add('Pop-Fr-Out')})}
 
-function PopGit() {
-    document.querySelectorAll('.Pop-Git-O').forEach((result) => {result.classList.add('Pop-Git-Out')})
-}
+/* POPS de proyectos */
+function PopP1() {document.querySelectorAll('.Pop-Product-1-O').forEach((result) => {result.classList.add('Pop-Product-1-Out')})}
+function PopP2() {document.querySelectorAll('.Pop-Product-2-O').forEach((result) => {result.classList.add('Pop-Product-2-Out')})}
+function PopP3() {document.querySelectorAll('.Pop-Product-3-O').forEach((result) => {result.classList.add('Pop-Product-3-Out')})}
 
-function PopFig() {
-    document.querySelectorAll('.Pop-Fig-O').forEach((result) => {result.classList.add('Pop-Fig-Out')})
-}
+/* POPS adicionales */
+function PopNew() {document.querySelectorAll('.Pop-News-O').forEach((result) => {result.classList.add('Pop-News-Out')})}
+function PopTry() {document.querySelectorAll('.Pop-Try-O').forEach((result) => {result.classList.add('Pop-Try-Out')})}
 
-function PopHTML() {
-    document.querySelectorAll('.Pop-HTML-O').forEach((result) => {result.classList.add('Pop-HTML-Out')})
-}
 
-function PopCSS() {
-    document.querySelectorAll('.Pop-CSS-O').forEach((result) => {result.classList.add('Pop-CSS-Out')})
-}
+function darkmode() {
+    document.body.classList.toggle('dark');
+    document.querySelectorAll('.inv-dark').forEach((result) => {result.classList.toggle('dark-mode-svg')});
 
-function PopJS() {
-    document.querySelectorAll('.Pop-JS-O').forEach((result) => {result.classList.add('Pop-JS-Out')})
-}
-
-function PopPY() {
-    document.querySelectorAll('.Pop-PY-O').forEach((result) => {result.classList.add('Pop-PY-Out')})
-}
-
-function PopSQL() {
-    document.querySelectorAll('.Pop-SQL-O').forEach((result) => {result.classList.add('Pop-SQL-Out')})
-}
-
-function PopP1() {
-    document.querySelectorAll('.Pop-Product-1-O').forEach((result) => {result.classList.add('Pop-Product-1-Out')})
-}
-
-function PopP2() {
-    document.querySelectorAll('.Pop-Product-2-O').forEach((result) => {result.classList.add('Pop-Product-2-Out')})
-}
-
-function PopP3() {
-    document.querySelectorAll('.Pop-Product-3-O').forEach((result) => {result.classList.add('Pop-Product-3-Out')})
-}
-
-function PopFr() {
-    document.querySelectorAll('.Pop-Fr-O').forEach((result) => {result.classList.add('Pop-Fr-Out')})
-}
-
-function PopNew() {
-    document.querySelectorAll('.Pop-News-O').forEach((result) => {result.classList.add('Pop-News-Out')})
-}
-
-function PopTry() {
-    document.querySelectorAll('.Pop-Try-O').forEach((result) => {result.classList.add('Pop-Try-Out')})
+    if(document.body.classList.contains('dark')) {
+        localStorage.setItem('dark-mode', 'true')
+    } else {
+        localStorage.setItem('dark-mode', 'false');
+    }
 }
 
 if (localStorage.getItem('dark-mode') === 'true' ) {
-    document.body.classList.add('dark');
+    document.body.classList.toggle('dark');
+    document.querySelectorAll('.inv-dark').forEach((result) => {result.classList.toggle('dark-mode-svg')});
+
 }
 else {
     document.body.classList.remove('dark');
-}
+    document.querySelectorAll('.inv-dark').forEach((result) => {result.classList.remove('dark-mode-svg')});
 
-function da() {
-    document.body.classList.toggle('dark');
-    document.querySelectorAll('.inv-dark').forEach((result) => {result.classList.toggle('dark-mode-svg')});
 }
