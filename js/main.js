@@ -3,12 +3,12 @@ window.addEventListener("scroll", () => {
     if(LastScrollY < window.scrollY) {
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.add('active'); })
         document.querySelectorAll('.scroll-2').forEach((result) => { result.classList.add('active-2'); })
-        document.querySelectorAll('.btn-en').forEach((result) => { result.classList.add('resolt'); })
+        document.querySelectorAll('.btn-en').forEach((result) => { result.classList.add('melbon-open'); })
         document.querySelectorAll('.bg-en').forEach((result) => { result.classList.add('bg-black'); })
     } else { 
         document.querySelectorAll('.scroll').forEach((result) => { result.classList.remove('active');})
         document.querySelectorAll('.scroll-2').forEach((result) => { result.classList.remove('active-2');})
-        document.querySelectorAll('.btn-en').forEach((result) => { result.classList.remove('resolt');})
+        document.querySelectorAll('.btn-en').forEach((result) => { result.classList.remove('melbon-open');})
         document.querySelectorAll('.bg-en').forEach((result) => { result.classList.remove('bg-black');})
     }
 })

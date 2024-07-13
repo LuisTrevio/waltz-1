@@ -32,22 +32,15 @@ header {
     transition: 0.2s ease-out;
 }
 
-.bg-black {
-    background-color: rgb(0 0 0 / 64%)
-}
+/*Animacion atenua*/
+.bg-black {background-color: rgb(0 0 0 / 64%)}
 
-.button-melbourne {
-    display: none;
-}
-
-.logo-ds {
-    display: none;
-}
-
-.letstry {
-    display: none;
-}
-
+/*botones moviles*/
+.button-melbourne {display: none;}
+.logo-ds {display: none;}
+.letstry {display: none;}
+.button-malviner{display: none;}
+.dk-movil {display: none;}
 
 @media (max-width:780px) {
     header {
@@ -62,14 +55,10 @@ header {
     }
 }
 
+/* Se mantiene en formato ESCRITORIO, pero con la interfaz para arriba */
 @media (max-width: 1030px) {
-    .header-max {
-        border-radius: 0px;
-    }
-
-    header {
-        padding: 0;
-    }
+    .header-max {border-radius: 0px;}
+    header {padding: 0;}
 }
 
 .logo {
@@ -94,33 +83,15 @@ header {
 }
 
 @media (max-width:780px) {
-    .logo {     
-        display: none;
-    }
-
+    .logo {display: none;}
 }
 
-.logo:hover {
-    color: var(--white);
-}
-
-.logo-on {
-    color: var(--white);
-}
+.logo:hover {color: var(--white);}
+.logo-on {color: var(--white);}
 
 @media (max-width:780px) {
-    
-    .logo:hover {
-        color: rgb(185, 185, 185);
-    }
-
-    .logo:active {
-        color: var(--white);
-    }
-}
-
-.btn-interno {
-    display: none;
+    .logo:hover {color: rgb(185, 185, 185);}
+    .logo:active {color: var(--white);}
 }
 
 @media (max-width:780px) {
@@ -144,7 +115,6 @@ header {
         background-color: var(--bg);
         /*background-color: #d9d9d9;*/
 
-
         margin: 10px;
         gap: 0px;
         padding: 5px;
@@ -152,7 +122,8 @@ header {
         transition: 0.2s ease-out;
     }
 
-    .btn-interno {
+    /* MODO CONTACTOS Y MODO NOCTURNO */
+    .button-malviner {
         display: flex;
         width: 70px;
         height: 70px;
@@ -161,11 +132,10 @@ header {
         flex-direction: row;
         transition: 0.2s ease-out;
     }
-
-    .interno-size {
-        width: 140px;
-    }
+    /* ACTIVA EL MOVIMIENTO*/
+    .interno-size {width: 140px;}
     
+    /**/
     .letstry {
         display: flex;
         width: 50px;
@@ -180,7 +150,7 @@ header {
         opacity: 1;
         pointer-events: all;
     }
-
+    /* desaparece y se mueve */
     .letsno {
         opacity: 0;
         pointer-events: none;
@@ -196,6 +166,7 @@ header {
         box-shadow: var(--shadow-elevation-high);
     }
 
+    /* Menu en movil lado izquierdo */
     .delta-a {
         width: 40px;
         height: 40px;
@@ -204,7 +175,7 @@ header {
 
         pointer-events: all;
     }
-
+    /* Menu en movil lado derecha */
     .delta-b {
         width: 0px;
         height: 0px;
@@ -215,8 +186,8 @@ header {
         opacity: 0;
         pointer-events: none;
     }
-
-    .resolt {
+    /* Derecha pero se activa con scroll */
+    .melbon-open {
         width: 40px;
         height: 40px;
         border-radius: 60px;
@@ -227,13 +198,8 @@ header {
         transform: translate(0 , 0);
     }
 
-    .delta-a:active {
-        background-color: rgba(22, 22, 22, 0.623);
-    }
-
-    .delta-b:active {
-        background-color: rgba(22, 22, 22, 0.623);
-    }
+    .delta-a:active {background-color: rgba(22, 22, 22, 0.623);}
+    .delta-b:active {background-color: rgba(22, 22, 22, 0.623);}
 
     .button {
         width: 100%;
@@ -263,31 +229,28 @@ header {
         position: fixed;
         transform: rotate(-46deg);
     }
-
-    .bar2-on {
-        opacity: 0;
-    }
-
+    .bar2-on {opacity: 0;}
     .bar3-on {
         position: fixed;
         transform: rotate(44deg);
     }
 
-    .logo-w  {
-            width: 100%;
-            height: 100%;
+    /* logo en su version movil*/
+    .logo-movile  {
+        width: 100%;
+        height: 100%;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-            user-select: none;
-            font-family: Josefin Sans,sans-serif;
-            font-size: 22px;
-            color: var(--white-dn);
+        user-select: none;
+        font-family: Josefin Sans,sans-serif;
+        font-size: 22px;
+        color: var(--white-dn);
 
-            padding: 4px 0 0 0;
+        padding: 4px 0 0 0;
     }
 }
 
@@ -302,17 +265,9 @@ header {
     background-repeat: no-repeat;
 }
 
-.button:active .bar-1 {
-    background: var(--header-hover);
-}
-
-.button:active .bar-2 {
-    background: var(--header-hover);
-}
-
-.button:active .bar-3 {
-    background: var(--header-hover);
-}
+.button:active .bar-1 {background: var(--header-hover);}
+.button:active .bar-2 {background: var(--header-hover);}
+.button:active .bar-3 {background: var(--header-hover);}
 
 .Menu-Full, .redes-sociales {
     display: none;
@@ -466,24 +421,6 @@ header {
 
     gap: 25px;
 }
-/*
-.menu-desk-link {
-    color: rgb(185, 185, 185);
-    font-family: 'Palanquin Dark', sans-serif;
-    transition: 0.2s ease-out;
-}
-
-.menu-desk-link:hover {
-    color: white;
-}
-
-@media (max-width:780px) {
-    .menu-desk {
-        display: none;
-    }
-}
-
-*/
 
 .link-desk {
     width: fit-content;
@@ -547,13 +484,7 @@ header {
     transition: 0.2s ease-out;
 }
 
-.darkmode:hover {
-   background-color: rgb(255 255 255 / 15%);
-}
-
-.movil {
-    display: none;
-}
+.darkmode:hover {background-color: rgb(255 255 255 / 15%);}
 
 @media (max-width:780px) {
     .darkmode {
@@ -726,7 +657,7 @@ header {
 
 }
 
-.burble-pop {
+.Pop-bubble {
     width: 80px;
     height: 80px;
 
@@ -742,7 +673,7 @@ header {
         transform: translate(0, -90px);
     }
 
-    .burble-pop {
+    .Pop-bubble {
         width: 100px;
         height: 100px;
     }
@@ -780,7 +711,6 @@ header {
     .St-Astr {width: 58%;}
 .St-PY {width: 48%;}
 .St-SQL {width: 43%;}
-
 
 .Status-Animated {
     animation: Status 0.63s ease-out;
