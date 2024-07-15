@@ -133,7 +133,6 @@ header {
         transition: 0.2s ease-out;
     }
     /* ACTIVA EL MOVIMIENTO*/
-    .interno-size {width: 140px;}
     
     /**/
     .letstry {
@@ -501,6 +500,7 @@ header {
 
         opacity: 0;
         pointer-events: none;
+        position: fixed;
     }
 
     .darksi {
@@ -664,7 +664,7 @@ header {
     border-radius: 80px;
     background-color: var(--status-base);
     box-shadow: var(--shadow-elevation-high);
-    pointer-events: all;
+    pointer-events: none;
 }
 
 @media (max-width:780px) {
