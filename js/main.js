@@ -91,9 +91,15 @@ function darkmode() {
     document.querySelectorAll('.inv-dark').forEach((result) => {result.classList.toggle('dark-mode-svg')});
 
     if(document.body.classList.contains('dark')) {
-        localStorage.setItem('dark-mode', 'true')
+        localStorage.setItem('dark-mode', 'true');
+
+        document.querySelectorAll('.st-w').forEach((result) => {result.classList.add('status-w-on')});
+        document.querySelectorAll('.st-d').forEach((result) => {result.classList.remove('status-d-on')});
     } else {
         localStorage.setItem('dark-mode', 'false');
+
+        document.querySelectorAll('.st-w').forEach((result) => {result.classList.remove('status-w-on')});
+        document.querySelectorAll('.st-d').forEach((result) => {result.classList.add('status-d-on')});
     }
 }
 
